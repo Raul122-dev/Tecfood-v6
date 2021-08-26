@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Restaurant_details.Restaurant_map">
+
+    <FrameLayout
+        android:id="@+id/fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_horizontal_rule"/>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/title_info_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/coiny"
+                            android:gravity="center"
+                            android:text="Informacion"
+                            android:textSize="20sp"
+                            android:textStyle="bold|normal" />
+
+                        <LinearLayout
+                            android:id="@+id/content_info_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title_info_map"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_direccion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Direccion:"
+                                tools:ignore="UnknownId" />
+
+                            <TextView
+                                android:id="@+id/txt_distrito"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Distrito:"
+                                tools:ignore="UnknownId" />
+
+                            <TextView
+                                android:id="@+id/txt_tiempo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Tiempo de llegada:"
+                                tools:ignore="UnknownId" />
+
+                            <TextView
+                                android:id="@+id/txt_contacto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Contacto:"
+                                tools:ignore="UnknownId" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/imgs_rest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/content_info_title"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/coiny"
+                            android:gravity="center"
+                            android:text="Imagenes del Restaurante"
+                            android:textSize="20sp"
+                            android:textStyle="bold|normal" />
+
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imgs_rest">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="300dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/rest1"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="15dp"
+                                    android:layout_margin="15dp"/>
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="300dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/rest2"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="15dp"
+                                    android:layout_margin="15dp"/>
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="300dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/rest3"
+                                    android:scaleType="centerCrop"
+                                    app:riv_corner_radius="15dp"
+                                    android:layout_margin="15dp"/>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+                    </RelativeLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Back_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

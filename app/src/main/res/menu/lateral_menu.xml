@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grupo2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemMisPromociones"
+            android:title="MIS OPCIONES">
+            <menu>
+                <item
+                    android:id="@+id/menuDireccion"
+                    android:title="Direccion" />
+                <item
+                    android:id="@+id/menuMisNotificaciones"
+                    android:title="Mis Notificaciones" />
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/grupo3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemInformacion"
+            android:title="MAS INFORMACION" >
+            <menu>
+                <item
+                    android:id="@+id/menuHacerseMiembro"
+                    android:icon="@android:drawable/ic_menu_agenda"
+                    android:title="Hacerte Miembro" />
+                <item
+                    android:id="@+id/menuAfiliarRestaurante"
+                    android:icon="@android:drawable/ic_menu_add"
+                    android:title="Afiliar Restaurante" />
+                <item
+                    android:id="@+id/menuAcercaDeTecFood"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="Acerca de TecFood" />
+                <item
+                    android:id="@+id/menuSalirAplicacion"
+                    android:icon="@android:drawable/ic_lock_power_off"
+                    android:title="Serrar Sesion" />
+            </menu>
+        </item>
+    </group>
+</menu>

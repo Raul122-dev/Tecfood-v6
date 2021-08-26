@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="25dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_name_plato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:padding="5dp"
+        android:text="Primera Entrada"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+
+        app:drawableStartCompat="@drawable/ic_arrow_right" />
+
+</LinearLayout>
